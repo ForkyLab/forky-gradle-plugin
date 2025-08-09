@@ -1,0 +1,34 @@
+[versions]
+gradle = "9.0.0"
+java = "21"
+kotlin = "2.2.0"
+kotlin-serialization = "1.9.0"
+kotlin-coroutines = "1.10.2"
+kotlin-poet = "2.2.0"
+kotlin-toml = "0.7.0"
+kotlin-eval = "1.1.1"
+dokka = "2.0.0"
+tika = "3.2.2"
+android = "8.13.0-alpha04"
+
+[libraries]
+kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+kotlin-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlin-coroutines" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+kotlin-poet = { group = "com.squareup", name = "kotlinpoet", version.ref = "kotlin-poet" }
+kotlin-toml = { group = "com.akuleshov7", name = "ktoml-core", version.ref = "kotlin-toml" }
+kotlin-eval = { group = "com.notkamui.libs", name = "keval", version.ref = "kotlin-eval" }
+
+tika = { group = "org.apache.tika", name = "tika-core", version.ref = "tika" }
+
+kotlin-utils = { group = "io.github.diskria", name = "kotlin-utils", version = "0.1.0" }
+gradle-utils = { group = "io.github.diskria", name = "gradle-utils", version = "0.1.0" }
+kotlin-regex = { group = "io.github.diskria", name = "kotlin-regex-dsl", version = "0.1.0" }
+kotlin-shell = { group = "io.github.diskria", name = "kotlin-shell-dsl", version = "0.1.0" }
+
+android-tools = { group = "com.android.tools.build", name = "gradle", version.ref = "android" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
